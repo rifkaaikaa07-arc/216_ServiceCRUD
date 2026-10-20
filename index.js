@@ -31,3 +31,7 @@ app.get('/', (req, res, next) => {
         res.status(500).json({ error: err.message });
     });
 })
+
+app.listen(port, () => {
+    console.log(`App running on port ${port}.`);
+})
