@@ -101,3 +101,7 @@ app.delete('/biodata/:id', (req, res) => {
             res.status(500).json({ error: err.message });
         });
 });
+
+app.listen(port, () => {
+    console.log(`App running on port ${port}.`);
+});
